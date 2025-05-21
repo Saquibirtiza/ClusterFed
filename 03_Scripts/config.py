@@ -7,8 +7,8 @@ config_dict = {
     'seed': 1, # set random seed
     'num_clients': 10, # choices: Int
     'alpha': 1e-1,  # choices= 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5
-    'data_dir': './data/', # where data is located
-    'save_dir': '.', # where model directory is to be created
+    'data_dir': '../04_Output/data/', # where data is located
+    'save_dir': '../04_Output/', # where model directory is to be created
     'force_restart_training': False, # set False if you want to restart federated training from the last global server model
     'force_restart_hparam': False, # set False if you want to restart unsupervised hyperparameter tuning from the last global server model
 
@@ -56,7 +56,7 @@ config_dict = {
 
 eval_dict = {
     'main_device': 'cuda:0', # choices: 0--7
-    'pretrained_loc': "./saved_models/model_ACI_IoT_0.001_alpha_custom_10_clients_16_bsize_15_lepochs_0.8_fit_128_gclusters_16_lclusters_1_seed.pth", # set this to location where the global model is saved
+    'pretrained_loc': "../04_Output/saved_models/model_ACI_IoT_0.001_alpha_custom_10_clients_16_bsize_15_lepochs_0.8_fit_128_gclusters_16_lclusters_1_seed.pth", # set this to location where the global model is saved
     'forced_path': "1212312312", # nuisace variable; ignore
     'batch_size': 256, # batch size for linear eval
     'warmup_epochs': 0, # warmup epochs (some papers use this; we don't)
