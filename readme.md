@@ -15,8 +15,6 @@ pip install -r requirements.txt
 
 ## 🚀 Getting Started
 ### Step 1: Partition the Dataset for Each Client
-To prepare the dataset for federated learning, you need to partition it among clients. The instructions to recreate the results for the UNSW dataset are given below. A separate script is also available for ACI_IoT dataset. We have included the csv files for the UNSW dataset in the `02_Data` folder. The [ACI_IoT](https://www.kaggle.com/datasets/emilynack/aci-iot-network-traffic-dataset-2023) dataset can be downloaded and added in the `02_Data` folder to recreate the results. 
-
 To prepare the dataset for federated learning, it must be partitioned across multiple clients. Instructions for partitioning the data using the UNSW dataset are provided below. A separate script is available for the ACI\_IoT dataset. The CSV files for the UNSW dataset are located in the `02_Data` folder. You can download the [ACI\_IoT dataset](https://www.kaggle.com/datasets/emilynack/aci-iot-network-traffic-dataset-2023) and place it in the same `02_Data` folder to reproduce the corresponding results.
 
 
